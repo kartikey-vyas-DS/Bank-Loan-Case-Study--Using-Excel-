@@ -1,5 +1,7 @@
+![logo](download.png)
+
 # Bank Loan Case Study (Using Excel)
- The project focuses on analysing the 
+ The project focuses on analysing the likelihood of loan default
 
 # Project Description
 The analysis aims to uncover patterns within a dataset containing information about loan applications, focusing on identifying factors influencing the likelihood of loan default. The dataset encompasses two distinct scenarios: when customers apply for loans and face either payment difficulties or all other cases.
@@ -30,15 +32,15 @@ and extraordinary analysis and visualization capability.
 # Tasks 
 ## A. Identify Missing Data and Deal with it Appropriately: 
 
-    -	In the application data file, several columns had null (NaN) values. Here are the new columns I introduced from the existing ones:
-    1.	Average EXT_SOURCE: Created from EXT_SOURCE_1, EXT_SOURCE_2, and EXT_SOURCE_3. As these columns contained float scores, but with varying percentages of null data (56.35%, 0.25%, and 19.89% respectively), I computed their average to utilize all available data effectively.
-    2.	Total FLAG_DOCUMENT: Consolidated from FLAG_DOCUMENT_2 to FLAG_DOCUMENT_21. While these columns had no null values, their unspecified document references prompted total aggregation, facilitating easy analysis of document submission patterns.
-    3.	Years Birth: Derived from DAYS_BIRTH, converting days to years.
-    4.	Years Employed: Derived from DAYS_EMPLOYED, converting days to years.
-    5.	Years Registration: Derived from DAYS_REGISTRATION, converting days to years.
-    6.	Years ID_PUBLISH: Derived from DAYS_ID_PUBLISH, converting days to years.
+-	In the application data file, several columns had null (NaN) values. Here are the new columns I introduced from the existing ones:
+1.	Average EXT_SOURCE: Created from EXT_SOURCE_1, EXT_SOURCE_2, and EXT_SOURCE_3. As these columns contained float scores, but with varying percentages of null data (56.35%, 0.25%, and 19.89% respectively), I computed their average to utilize all available data effectively.
+2.	Total FLAG_DOCUMENT: Consolidated from FLAG_DOCUMENT_2 to FLAG_DOCUMENT_21. While these columns had no null values, their unspecified document references prompted total aggregation, facilitating easy analysis of document submission patterns.
+3.	Years Birth: Derived from DAYS_BIRTH, converting days to years.
+4.	Years Employed: Derived from DAYS_EMPLOYED, converting days to years.
+5.	Years Registration: Derived from DAYS_REGISTRATION, converting days to years.
+6.	Years ID_PUBLISH: Derived from DAYS_ID_PUBLISH, converting days to years.
 
-    -	Columns dropped due to insufficient data (with null values > 30%):
+-	Columns dropped due to insufficient data (with null values > 30%):
 
 - A graph depicting Null values in Raw Dataset
 
@@ -133,8 +135,8 @@ Top correlations were identified through three iterations of analysis:
 
 # Insights
 
-•	Within the application data file, a significant majority of applications, accounting for 90.68%, were registered for cash loans, whereas 9.32% of applications were earmarked for revolving loans. This distribution underscores the prevalent preference for cash loans among applicants.
-•	The Average External Sources (Avg EXT Sources) emerged as a pivotal feature in assessing loan defaults. Introducing additional features akin to Avg EXT Sources could enhance the model's robustness, enabling a more comprehensive analysis of loan repayment probabilities.
-•	An intriguing insight from the dataset's 'Name Income Type' column indicates that 17.66% of applicants identify as pensioners. This demographic segment represents a substantial portion of the applicant pool, warranting targeted strategies tailored to their unique financial circumstances.
-•	In loan borrower analysis, the region rating assumes paramount importance. Regions with lower ratings often face heightened scrutiny during the loan approval process, potentially leading to application rejections. Juxtaposing region rating with metrics like OBS_30_CNT_SOCIAL_CIRCLE and OBS_60_CNT_SOCIAL_CIRCLE could yield valuable insights. Such an approach could help identify applicants associated with groups of defaulters, thereby safeguarding against potential exploitation of financial institution resources.
-•	An intriguing observation stems from the 'DAYS_LAST_PHONE_CHANGE' column in the dataset. Among defaulted applications, a noteworthy 14.79% of individuals altered their phone numbers on the same day as their application, as indicated by the unique value '0' in this column. This finding suggests a potential correlation between immediate phone number changes and loan default, warranting further investigation into the underlying causes.
+- Within the application data file, a significant majority of applications, accounting for 90.68%, were registered for cash loans, whereas 9.32% of applications were earmarked for revolving loans. This distribution underscores the prevalent preference for cash loans among applicants.
+- The Average External Sources (Avg EXT Sources) emerged as a pivotal feature in assessing loan defaults. Introducing additional features akin to Avg EXT Sources could enhance the model's robustness, enabling a more comprehensive analysis of loan repayment probabilities.
+- An intriguing insight from the dataset's 'Name Income Type' column indicates that 17.66% of applicants identify as pensioners. This demographic segment represents a substantial portion of the applicant pool, warranting targeted strategies tailored to their unique financial circumstances.
+- In loan borrower analysis, the region rating assumes paramount importance. Regions with lower ratings often face heightened scrutiny during the loan approval process, potentially leading to application rejections. Juxtaposing region rating with metrics like OBS_30_CNT_SOCIAL_CIRCLE and OBS_60_CNT_SOCIAL_CIRCLE could yield valuable insights. Such an approach could help identify applicants associated with groups of defaulters, thereby safeguarding against potential exploitation of financial institution resources.
+- An intriguing observation stems from the 'DAYS_LAST_PHONE_CHANGE' column in the dataset. Among defaulted applications, a noteworthy 14.79% of individuals altered their phone numbers on the same day as their application, as indicated by the unique value '0' in this column. This finding suggests a potential correlation between immediate phone number changes and loan default, warranting further investigation into the underlying causes.
