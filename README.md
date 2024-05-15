@@ -65,25 +65,25 @@ For further insight, scatterplot graphs were generated for columns such as AMT_C
 
 The dataset reveals a notable imbalance in certain columns, with some features displaying varying degrees of disproportion between different categories. Here's an examination of the data imbalance across three categories:
 1.	Mild Imbalance [20-40% minority proportion]:
-•	CODE_GENDER: 34.03% Male against 65.97% Female
-•	FLAG_OWN_CAR: 34.87% "N" Value against 65.13% "Y" Value
-•	FLAG_OWN_REALTY: 31% "N" value against 69% "Y" value
-•	FLAG_PHONE: 28.10% "1" value against 71.90% "0" value
-•	REG_CITY_NOT_WORK_CITY: 22.79% "1" value against 77.21% "0" value
+-	CODE_GENDER: 34.03% Male against 65.97% Female
+-	FLAG_OWN_CAR: 34.87% "N" Value against 65.13% "Y" Value
+-	FLAG_OWN_REALTY: 31% "N" value against 69% "Y" value
+-	FLAG_PHONE: 28.10% "1" value against 71.90% "0" value
+-	REG_CITY_NOT_WORK_CITY: 22.79% "1" value against 77.21% "0" value
 
 ![alt text](Picture5.png)
 
 2.	Moderate Imbalance [1-20% minority proportion]:
-•	FLAG_EMAIL: 5.67% "1" value against 94.33% "0" value
-•	FLAG_EMP_PHONE: 17.67% "1" value against 82.33% "0" value
-•	FLAG_WORK_PHONE: 19.81% "1" value against 80.19% "0" value
-•	REG_REGION_NOT_WORK_REGION: 4.89% "1" value against 95.11% "0" value
-•	LIVE_CITY_NOT_WORK_CITY: 17.78% "1" value against 82.22% "0" value
+-	FLAG_EMAIL: 5.67% "1" value against 94.33% "0" value
+-	FLAG_EMP_PHONE: 17.67% "1" value against 82.33% "0" value
+-	FLAG_WORK_PHONE: 19.81% "1" value against 80.19% "0" value
+-	REG_REGION_NOT_WORK_REGION: 4.89% "1" value against 95.11% "0" value
+-	LIVE_CITY_NOT_WORK_CITY: 17.78% "1" value against 82.22% "0" value
 
 ![alt text](Picture6.png)
 
 3.	Extreme Imbalance [less than 1% minority proportion]:
-•	FLAG_CONT_MOBILE: 0.21% "0" value against 99.79% "1" value
+-	FLAG_CONT_MOBILE: 0.21% "0" value against 99.79% "1" value
 
 ![alt text](Picture7.png)
 
